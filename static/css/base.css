@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/wi424a9b2da5b-9b6b-4bc1-b5c5-988f5b9fad2e1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -28,8 +28,8 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     min-width: 260px;
 }
 
