@@ -4,15 +4,73 @@
        "model":"products.product",
        "fields":{
           "sku":"pp5001340155",
-          "name":"Arizona Original Bootcut Jeans",
-          "description":"Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
-          "price":53.99,
-          "category":6,
+          "name":"New Balance Running Shorts",
+          "description":"New Balance Running Shorts",
+          "price":29.99,
+          "category":1,
           "rating":4.6,
           "image_url":"media/RunningShorts.jpg",
           "image":"RunningShorts.jpg"
        }
-    }
+    },
+
+    {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340156",
+         "name":"Combat Shorts",
+         "description":"Combat Shorts",
+         "price":39.99,
+         "category":1,
+         "rating":4.6,
+         "image_url":"media/CombatShorts.jpg",
+         "image":"CombatShorts.jpg"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340157",
+         "name":"Grey Shorts",
+         "description":"Grey Shorts",
+         "price":29.99,
+         "category":1,
+         "rating":4.1,
+         "image_url":"media/GreyShorts.jpg",
+         "image":"GreyShorts.jpg"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340158",
+         "name":"Black Shorts",
+         "description":"Black Shorts",
+         "price":24.99,
+         "category":1,
+         "rating":4.0,
+         "image_url":"media/BlackShorts.jpg",
+         "image":"BlackShorts.jpg"
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340159",
+         "name":"Navy Shorts",
+         "description":"Navy Shorts",
+         "price":29.99,
+         "category":1,
+         "rating":4.1,
+         "image_url":"media/NavyShorts.jpg",
+         "image":"NavyShorts.jpg"
+      }
+   }
+
 
 ]
     
