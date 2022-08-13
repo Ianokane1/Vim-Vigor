@@ -139,7 +139,190 @@
          "image_url":"media/tshirtpack.jpg",
          "image":"tshirtpack.jpg"
       }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340165",
+         "name":"New Balance Black",
+         "description":"New Balance Black",
+         "price":99.99,
+         "category":3,
+         "rating":4.0,
+         "image_url":"media/Runningshoes1.jpg",
+         "image":"Runningshoes1.jpg"
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340166",
+         "name":"Skechers Dark Green",
+         "description":"Skechers Dark Green",
+         "price":129.99,
+         "category":3,
+         "rating":5.0,
+         "image_url":"media/Runningshoes2.jpg",
+         "image":"Runningshoes2.jpg"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340167",
+         "name":"New Balance Blue/Pink",
+         "description":"New Balance Blue/Pink",
+         "price":99.99,
+         "category":3,
+         "rating":4.0,
+         "image_url":"media/Runningshoes3.jpg",
+         "image":"Runningshoes3.jpg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340168",
+         "name":"New Balance Navy",
+         "description":"New Balance Navy",
+         "price":99.99,
+         "category":3,
+         "rating":4.0,
+         "image_url":"media/Runningshoes4.jpg",
+         "image":"Runningshoes4.jpg"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340169",
+         "name":"New Balance Light Green",
+         "description":"New Balance Light Green",
+         "price":99.99,
+         "category":3,
+         "rating":4.0,
+         "image_url":"media/Runningshoes5.jpg",
+         "image":"Runningshoes5.jpg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340171",
+         "name":"After Training",
+         "description":"After Training",
+         "price":49.99,
+         "category":4,
+         "rating":4.0,
+         "image_url":"media/Aftertraining.jpg",
+         "image":"Aftertraining.jpg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340172",
+         "name":"Beef Protein",
+         "description":"Beef Protein",
+         "price":49.99,
+         "category":4,
+         "rating":4.0,
+         "image_url":"media/Beefprotein.jpg",
+         "image":"Beefprotein.jpg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340173",
+         "name":"Whey Protein",
+         "description":"Whey Protein",
+         "price":49.99,
+         "category":4,
+         "rating":4.0,
+         "image_url":"media/Wheyprotein.jpg",
+         "image":"Wheyprotein.jpg"
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340174",
+         "name":"Vitamin AZ",
+         "description":"Vitamin AZ",
+         "price":19.99,
+         "category":10,
+         "rating":4.1,
+         "image_url":"media/VitaminAZ.png",
+         "image":"VitaminAZ.png"
+      }
+   },
+   {
+      "pk":20,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340175",
+         "name":"Vitamin C",
+         "description":"Vitamin C",
+         "price":19.99,
+         "category":10,
+         "rating":4.1,
+         "image_url":"media/VitaminC.png",
+         "image":"VitaminC.png"
+      }
+   },
+   {
+      "pk":21,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340176",
+         "name":"Vitamin D3",
+         "description":"Vitamin D3",
+         "price":19.99,
+         "category":10,
+         "rating":4.1,
+         "image_url":"media/VitaminD3.png",
+         "image":"VitaminD3.png"
+      }
+   },
+   {
+      "pk":22,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340177",
+         "name":"Impact Bar",
+         "description":"Impact Bar",
+         "price":5.99,
+         "category":5,
+         "rating":4.1,
+         "image_url":"media/Impactbar.png",
+         "image":"Impactbar.png"
+      }
+   },
+   {
+      "pk":23,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340177",
+         "name":"Oat Bakes",
+         "description":"Oat Bakes",
+         "price":5.99,
+         "category":5,
+         "rating":4.1,
+         "image_url":"media/Oatbakes.png",
+         "image":"Oatbakes.png"
+      }
    }
+
    
 ]
     

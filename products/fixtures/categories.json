@@ -70,5 +70,13 @@
           "name":"all_specials",
           "friendly_name":"All Specials"
        }
-    }
+    },
+    {
+      "pk":10,
+      "model":"products.category",
+      "fields":{
+         "name":"vitamins",
+         "friendly_name":"Vitamins"
+      }
+   }
  ]
