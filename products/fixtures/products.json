@@ -69,8 +69,77 @@
          "image_url":"media/NavyShorts.jpg",
          "image":"NavyShorts.jpg"
       }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340160",
+         "name":"Black T-Shirt",
+         "description":"Black T-Shirt",
+         "price":19.99,
+         "category":2,
+         "rating":4.6,
+         "image_url":"media/Blacktshirt.jpg",
+         "image":"Blacktshirt.jpg"
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340161",
+         "name":"Blue T-Shirt",
+         "description":"Blue T-Shirt",
+         "price":19.99,
+         "category":2,
+         "rating":4.1,
+         "image_url":"media/Bluetshirt.jpg",
+         "image":"Bluetshirt.jpg"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340162",
+         "name":"Grey T-Shirt",
+         "description":"Grey T-Shirt",
+         "price":19.99,
+         "category":2,
+         "rating":4.8,
+         "image_url":"media/Greytshirt.jpg",
+         "image":"Greytshirt.jpg"
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340163",
+         "name":"Navy T-Shirt",
+         "description":"Navy T-Shirt",
+         "price":19.99,
+         "category":2,
+         "rating":4.8,
+         "image_url":"media/Navytshirt.jpg",
+         "image":"Navytshirt.jpg"
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340164",
+         "name":"T-Shirt Pack",
+         "description":"Mixed T-Shirt Pack",
+         "price":59.99,
+         "category":2,
+         "rating":5.0,
+         "image_url":"media/tshirtpack.jpg",
+         "image":"tshirtpack.jpg"
+      }
    }
-
-
+   
 ]
     
