@@ -312,7 +312,7 @@
       "pk":23,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001340177",
+         "sku":"pp5001340178",
          "name":"Oat Bakes",
          "description":"Oat Bakes",
          "price":5.99,
