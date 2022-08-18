@@ -1,0 +1,1 @@
+web: gunicorn vim_vigor.wsgi:application
