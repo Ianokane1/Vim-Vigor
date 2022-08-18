@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://vim-vigor.herokuapp.com/sitemap.xml
