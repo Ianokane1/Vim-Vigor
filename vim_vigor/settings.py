@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import os
+if os.path.exists("env.py"):
+  import env 
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -21,9 +24,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['vim-vigor.herokuapp.com', 'localhost']
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-ianokane1-vimvigor-6r1xq3h1uho.ws-eu62.gitpod.io']
 
 
 # Application definition
