@@ -73,6 +73,7 @@
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                    <a href="{% url 'add_post' %}" class="dropdown-item">Blog Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -140,7 +141,7 @@
     {% endblock %}
 
     <!-- Footer -->
-    <footer class="page-footer font-small pt-5 mt-5">
+    <footer class="page-footer font-small pt-5 mt-5 footer" style="background-color: black; color: white;">
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mb-3">
@@ -160,7 +161,7 @@
                 </div>
   
                 <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase text-white">Business</h5>
+                    <h5 class="text-uppercase">Business</h5>
                     <ul class="list-unstyled">
                         <li>
                             <a href="{% url 'blog' %}" class="text-white">Blog</a>
@@ -185,7 +186,7 @@
                 </div>
   
                 <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase text-white">Social Media</h5>
+                    <h5 class="text-uppercase">Social Media</h5>
                     <ul class="list-unstyled">
                         <li>
                             <a class="text-white" href="https://facebook.com" target="_blank" rel="noopener"
@@ -206,15 +207,14 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright text-center text-white py-3">This site was made for educational purposes only.</div>
+        <div class="footer-copyright text-center py-3">This site was made for educational purposes only.</div>
     </footer>
 
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
     {% endblock %}
+</body>
 
-    
-  </body>
 </html>
