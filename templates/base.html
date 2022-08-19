@@ -147,7 +147,7 @@
                 <div class="col-md-6 mt-md-0 mb-3">
                     <h5 class="text-white mb-3">Newsletter</h5>
                     <p class="small text-white">Subsribe to our newletter!</p>
-                    <form class="newsletter-form" action="" method="POST">
+                    <form class="newsletter-form" action="{% url 'newsletter' %}" method="POST">
                       {% csrf_token %}
                         <div class="input-group mb-3">
                             <input class="form-control" type="email" name="email" placeholder="Enter your email address"
@@ -157,7 +157,7 @@
                             </button>
                         </div>
                     </form>
-                    <a href="" class="text-white" >To unsubscribe, please click here</a>
+                    <a href="{% url 'newsletter_unsub' %}" class="text-white" >To unsubscribe, please click here</a>
                 </div>
   
                 <div class="col-md-3 mb-md-0 mb-3">
@@ -168,7 +168,7 @@
                         </li>
                         
                         <li>
-                            <a href="" class="text-white">Contact Us</a>
+                            <a href="{% url 'contact' %}" class="text-white">Contact Us</a>
                         </li>
 
                         <li>
@@ -180,7 +180,7 @@
                         </li>
 
                         <li>
-                            <a href="" class="text-white">Privacy Policy</a>
+                            <a href="{% url 'privacy_policy' %}" class="text-white">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
