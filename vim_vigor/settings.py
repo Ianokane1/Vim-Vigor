@@ -8,7 +8,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import os
 if os.path.exists("env.py"):
   import env 
 import dj_database_url
@@ -28,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['vim-vigor.herokuapp.com', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-ianokane1-vimvigor-6r1xq3h1uho.ws-eu62.gitpod.io, vim-vigor.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://8000-ianokane1-vimvigor-6r1xq3h1uho.ws-eu62.gitpod.io']
 
 
 # Application definition
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'blog',
 
     # Other
     'crispy_forms',
