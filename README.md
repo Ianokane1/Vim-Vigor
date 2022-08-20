@@ -34,8 +34,7 @@ A live website can be found [here](https://vim-vigor.herokuapp.com/).
 -   [7. Marketing](#marketing)
 -   [8. Social Media](#social-media)
 -   [9. End Product](#end-product)
--   [10. Known Bugs](#known-bugs)
--   [11. Credits](#credits)
+-   [10. Credits](#credits)
 
 <a name="ux"></a>
 
@@ -582,7 +581,6 @@ I had no errors in my root level CSS file:
 I used [JS Hint](https://jshint.com/) to check for any errors within all my JavaScript script files. JS Hint showed warnings a few warnings but no errors.
 
 I had no errors in my JavaScript files:
-![javascript_validation](documentation_assets/images/javascript_validation.png)
 
 ### Python:
 I used the python3 -m flake8 command within GitPod to check for any errors within my Python files. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
@@ -598,4 +596,231 @@ These include:
 -   iPhone XS Max
 -   iPad Pro
 -   MacBook Pro
+
+Please find below my testing process for all pages via mobile and web:
+
+### Navigation Bar
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Home page | When clicking the "home" link in the navigation bar (mobile only), the browser redirects me to the home page. | PASS
+All products page | When clicking the "All Products" link in the navigation bar, the category shows a dropdown list so I have access to more sort/filter options. The user will know they are on this page by the heading. | PASS
+Clothing links | When clicking the clothing links in the navigation bar, the browser redirects me to the selected product page. The user will know they are on this page by the heading. | PASS
+Special offers page | When clicking the "Special Offers" link in the navigation bar, the category shows a dropdown list so I have access to more sort/filter options. | PASS
+Register page | When clicking the "register" link in the navigation bar, the browser redirects me to the register page. The user will know they are on this page by the heading. | PASS
+Login / Logout page | When clicking the "login" or "logout links in the navigation bar, the browser redirects me to the login or logout page. | PASS
+Basket page | When clicking the "basket" icon in the navigation bar, the browser redirects me to the basket page. The user will know they are on this page by the heading. | PASS
+My Profile page | When clicking the "My profile" link in the navigation bar, the browser redirects me to my profile page. The user will know they are on this page by the heading. | PASS
+Product management page | When clicking the "product management" link as a superuser in the navigation bar, the browser redirects me to the product management page. The user will know they are on this page by the heading. | PASS
+Blog management page | When clicking the "blog management" link as a superuser in the navigation bar, the browser redirects me to the blog management page. The user will know they are on this page by the heading. | PASS
+Search bar | When searching for a keyword, the results will show products that contain the keyword in the product name or description. | PASS
+Foreground & background colour | Checked foreground information is not distracted by background elements. | PASS
+Text | Checked that all fonts and colours used are consistent. | PASS
+
+### Footer
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Subscribe to newsletter | When filling out the newsletter form in the navigation bar from the footer, the browser redirects me to the home page if the form was completed successfully. The web page also shows me a success message. | PASS
+Unsubscribe to newsletter page | When clicking the "unsubscribe" link in the footer, the browser redirects me to the newsletter unsubscribe page. The user will know they are on this page by the heading. | PASS
+Contact Us page | When clicking the "contact us" link in the footer, the browser redirects me to the contact page. The user will know they are on this page by the heading. | PASS
+Register page | When clicking the "Register" link in the footer, the browser redirects me to the register page. The user will know they are on this page by the heading.| PASS
+Login page | When clicking the "login" link in the footer, the browser redirects me to the login page. | PASS
+Privacy policy page | When clicking the "Privacy policy" link in the footer, the browser redirects me to the privacy policy page. The user will know they are on this page by the heading. | PASS
+Facebook | When clicking the Facebook icon, a new tab opens and redirects to the Facebook website. | PASS
+Twitter | When clicking the Twitter icon, a new tab opens and redirects to the Twitter website. | PASS
+Instagram | When clicking the Instagram icon, a new tab opens and redirects to the Instagram website. | PASS
+
+### Home page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+
+### Products page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Sort filter | Check the sort/filter functionality by selecting each option. Each option reloads the page and sorts the products in the corresponding order. | PASS
+Edit Button (SuperUser only) | Check the edit button is only accessible if the user is logged in as a SuperUser. | PASS
+Delete Button (SuperUser only) | Check the delete button is only accessible if the user is logged in as a SuperUser. | PASS
+
+### Products details page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Weight selector | Check the weight selector functionality by selecting each option. Add each option to the basket to confirm the correct weight is selected. | PASS
+Quantity Selector | Check the quantity selector functionality by selecting minus and plus buttons where applicable. Adding a product to the basket to confirm the correct quantity selected is correct. | PASS
+Edit Button (SuperUser only) | Check the edit button is only accessible if the user is logged in as a SuperUser. | PASS
+Delete Button (SuperUser only) | Check the delete button is only accessible if the user is logged in as a SuperUser. | PASS
+
+### Shopping bag page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Remove item from bag | Clicking the remove link on an item removes the item from the bag. | PASS
+Quantity Selector | Check the quantity selector functionality by selecting min and plus buttons where applicable. Adding a product to the basket to confirm the correct quantity selected is correct. | PASS
+Free delivery threshold | Adding products to the bag where the grand total value is under £250, the bag shows the free delivery warning message. The message disappears when the grand total is over £250. | PASS
+
+### Checkout page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Checkout form | Filling in the form with the correct validation processes the order. | PASS
+Checkout form | Filling in the form with the incorrect validation shows errors messages. | PASS
+Save details checkout | Selecting the "Save this delivery information to my profile" checkbox, this saves/updates my profile details. | PASS
+Card authentication | Used the Stripe test card details and purposely failed authenticated to check for error messages. | PASS
+
+### Checkout success page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Order history | When clicking on an order number in the order history section, this takes me to a past order confirmation summary page. | PASS
+Updating my profile | When updating the default delivery information, this reflects on the checkout page. | PASS
+
+### Product management page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Adding a product | When filling out the form to add a new product, the product is added to the relevant category and is searchable via the search bar. | PASS
+Uploading an image | When uploading an image to a new product, the site shows the name of the file that will be uploaded. When checking the product details page, the image also shows. | PASS
+
+### Blog management page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Adding a Blog post | When filling out the form to add a blog post, the blog post is added to the blog main blog section. | PASS
+Uploading an image | When uploading an image to a blog post, the site shows the name of the file that will be uploaded. When checking the all blog posts page, the image also shows. | PASS
+
+<a name="deployment"></a>
+
+# 5. Deployment
+[Go to the top](#table-of-contents)
+
+I used the terminal to deploy my project locally. To do this I had to:
+
+1. Create a repository on GitHub.
+2. Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
+3. Open the terminal within GitPod
+4. Enter "python3 manage.py runserver into the terminal.
+5. Go to localhost address on my web browser.
+6. All locally saved changes will show up here.
+
+For the final deployment to Heroku, I had to:
+
+1. Create Heroku App
+2. Install dj_database_url and psycopg2-binary in my local environment
+3. Freeze requirements.txt file
+4. In settings.py import dj_database_url
+5. Back up the local database using "./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json" in the terminal window.
+6. Comment out the local default database
+7. Add the Heroku database url via dj_database_url.parse()
+8. Run migrations to the Postgres database
+9. Restore the database using this command "./manage.py loaddata db.json" in the terminal windows.
+10. Create a SuperUser for the Postgres database
+11. Configure the database so that when the app is running on Heroku it uses the Postgres database and when it's running locally it uses the SQLite database
+12. Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the Django app
+13. Disable Heroku collect static
+14. Add the Heroku hostname to allowed hosts in settings.py
+15. Generate a new Django secret key and add this to the Heroku config variables
+16. Replace the secret key in settings.py to grab it from the environment
+17. Set debug to True only if the environment is a development environment
+18. Commit changes and deploy to GitHub and Heroku
+19. Create an AWS account
+20. Create an S3 bucket
+21. Configure the S3 bucket settings and policies
+22. Create and configure the IAM service
+23. In the terminal install Boto3 and Django-storages
+24. Freeze requirements.txt file
+25. Add a statement to the AWS bucket if the environment is "USE_AWS"
+26. Add AWS keys to the Heroku config variables
+27. Create custom storage classes for media and static files
+28. In settings.py add a statement to use the static and media storage class and locations
+29. Commit and push to GitHub and Heroku
+30. In the S3 bucket create a new folder for media
+31. Upload all used images to the media file in the S3 bucket
+32. Add the Stripe keys to the Heroku config variables
+33. Create a new webhook endpoint from the Stripe dashboard
+34. Add all the Stripe keys to the Heroku config variables
+
+<a name="seo"></a>
+
+# 6. SEO
+[Go to the top](#table-of-contents)
+
+To improve the search engine optimisation (SEO) of the site I:
+
+- Added keywords in a meta tag to my base.html. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
+
+<a name="marketing"></a>
+
+# 7. Marketing
+[Go to the top](#table-of-contents)
+
+For my marketing strategies, I decided to go with content marketing, Social media and email marketing root. As these are free options and very effective for an E-commerce store.
+
+- Content marketing - Posting content that contains blog posts and video tutorials will be my primary source to display content.
+
+- Social media - Using these platforms will help build and interact with customers to build relationships and loyalty. This also helps build the brand. Followers will help share the business posts and in result gain more traction with other people. The same content can be across all social media platforms.
+
+- Email marketing - Using email marking via a newsletter will be beneficial as it is a free source of marketing. Those who are subscribed are more likely to convert into paying customers. This will increase sales and returning customers as I can provide discount codes and other special offers. A good pro is that the business has total control over the design of the emails.
+
+<a name="social-media"></a>
+
+# 8. Social Media Business Page
+[Go to the top](#table-of-contents)
+
+![facebook_business_page](documentation_assets/images/facebook_business_page.png)
+
+The business will use social media as a platform to promote the business.
+
+# 9. End Product
+[Go to the top](#table-of-contents)
+
+![end_product_home](documentation_assets/images/finishedhome.png)
+![end_product_all_products](documentation_assets/images/finishedproducts.png)
+![end_product_product_details](documentation_assets/images/productdetail.png)
+![end_product_shopping_bag](documentation_assets/images/finishedshoppingbag.png)
+![end_product_checkout](documentation_assets/images/finishedcheckout.png)
+![end_product_order_confirmation](documentation_assets/images/finishedorder.png)
+![end_product_my_profile](documentation_assets/images/finishedprofile.png)
+![end_product_privacy_policy](documentation_assets/images/privacypolicy.png)
+![end_product_subscribe](documentation_assets/images/newslettersuccess.png)
+![end_product_unsubscribe](documentation_assets/images/newsletterunsubscribe.png)
+![end_product_add_blog_post](documentation_assets/images/blogadd.png)
+![end_product_add_product](documentation_assets/images/finishedaddproduct.png)
+![end_product_contact](documentation_assets/images/finishedcontact.png)
+![end_product_all_blog_posts](documentation_assets/images/allblog.png)
+![end_product_blog_details](documentation_assets/images/blogdone.png)
+
+<a name="credits"></a>
+
+# 10. Credits
+
+[Go to the top](#table-of-contents)
+
+### Code
+
+- Code Institue (Boutique Ado) - For the walkthrough
+- The blog post content came from the [acefitness](https://www.acefitness.org/resources/everyone/blog/6646/benefits-of-flexibility/) website.
+
+### Content
+
+- All images on the site came from [MandMdirect](https://www.mandmdirect.ie/)
+
+- All product descriptions on the site came from [Google](https://google.com/).
+
+- The privacy policy on the site came from [PrivacyPolicyGenerator](https://www.privacypolicygenerator.info/).
+
+### Project Acknowledgements
+- Code Institue Tutor Support - For directing me to the correct solutions for any bugs.
+
+- My Mentor - For his constructive criticism and always pushing me to go further to develop my skills.
+
 
