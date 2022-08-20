@@ -475,3 +475,127 @@ The link to the font can be found [here](https://fonts.google.com/specimen/IBM+P
 - The quantity selector starts at 1. When the quantity is at 1, the minus button is disabled.
 - When adding a product to the basket, the user will be prompted with a success message confirming the product has been added.
 ![basket_success](documentation_assets/images/productdetail.png)
+
+### Basket Page
+- This page shows each product as a line item, displaying an image, name of the product, SKU, price per item and quantity. This updates the total for each item.
+- When the quantity selector is at 1, the minus button is disabled.
+- A pricing summary of the whole basket is also shown with the basket total, delivery fee and total.
+- If the user has not met the free delivery threshold then an alert message is shown, prompting the user that they can qualify for free delivery if they spend more.
+![delivery_threshold](documentation_assets/images/basket.png)
+
+### Checkout Page
+- A checkout form, prompts the user to enter their delivery details with Stripe integration.
+- A checkbox for the user to confirm if they would like to save their details for next time. This only saves delivery details and not the card details.
+- A summary of the user's order is also shown, the user can then be sure they are making the correct purchase before continuing with the checkout process.
+- A message is shown just below the complete order button to warn the user that they will be charged a certain amount on their card.
+
+### Checkout Success Page
+- This page shows a summary of their order, with an order number.
+- Once the user is on this page, an email will also be triggered to send out an order confirmation email.
+
+### My Profile Page
+- This page shows a form so the user can update their delivery details. Upon completing the form, all delivery details will be updated if the user proceeds to the checkout page again.
+- Order history is also displayed, where the user can select the order number to view a previous order confirmation summary. An alert will also show prompting the user they are viewing a past order confirmation summary.
+![my_profile](documentation_assets/images/myprofile.png)
+
+### Product Management Page
+- This page is for superusers only.
+- A form to add more products to the store.
+
+### Blog Management Page
+- This page is for superusers only.
+- A form to add more blog posts.
+
+### Newsletter Subscribe Page
+- A one-field form for the user to enter their email to subscribe to the newsletter.
+- Once the user has successfully subscribed to the newsletter, they will be redirected to the home page. A success message will show up confirming the user has successfully subscribed to the newsletter.
+- If the user inputs email they will get a success message
+![subscribe_success](documentation_assets/images/newslettersuccess.png)
+
+### Newsletter Unsubscribe Page
+- A one-field form for the user to enter their email to unsubscribe from the newsletter.
+- Once the user has successfully unsubscribed from the newsletter, they will be redirected to the home page. A success message will show up confirming the user has successfully unsubscribed to the newsletter.
+- If user unsubscribes they will get the following message.
+![unsubscribe_sucess](documentation_assets/images/newsletterunsubscribe.png)
+
+<a name="technologies-used"></a>
+
+## 3. Technologies Used
+
+[Go to the top](#table-of-contents)
+
+[HTML5](https://en.wikipedia.org/wiki/HTML)
+    -   The project uses HyperText Markup Language.
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)
+    -   The project uses Cascading Style Sheets.
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    -   The project uses JavaScript.
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    -   The project uses Python.
+-   [Django](https://www.djangoproject.com/)
+    -   The project uses Django as the main framework.
+-   [Boostrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+    -   The project uses Bootstrap 4.
+-   [PostgreSQL](https://www.postgresql.org/)
+    -   The project uses PostgreSQL as a database.
+-   [AWS](https://aws.amazon.com/)
+    -   The project uses Amazon Web Services to host all static and media files.
+-   [Gitpod](https://www.gitpod.io/)
+    -   The project uses Gitpod.
+-   [Chrome](https://www.google.com/intl/en_uk/chrome/)
+    -   The project uses Chrome to debug and test the source code using HTML5.
+-   [Heroku](https://www.heroku.com/)
+    -   The project is deployed and hosted by Heroku.
+-   [Balsamiq](https://balsamiq.com/)
+    -   Balsamiq was used to create the wireframes during the design process.
+-   [Google Fonts](https://fonts.google.com/)
+    -   Google fonts were used to import the "Be Vietnam Pro" font into the style.css file which is used on all pages throughout the project.
+-   [GitHub](https://github.com/)
+    -   GitHub was used to store the project's code after being pushed from Git.
+
+    <a name="testing"></a>
+
+# 4. Testing
+
+[Go to the top](#table-of-contents)
+### Responsive Tools
+I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive to all devices.
+
+### W3C Validator Tools
+
+#### HTML:
+I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within the HTML pages.
+
+I had occurring errors that were related to Django, for these instances I have chosen to ignore them.
+![HTML_errors_example](documentation_assets/images/html_error_example.png)
+
+#### CSS:
+I used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to check for any errors within all my CSS stylesheets.
+
+I had one error in my checkout CSS file, however, I have chosen to ignore this as this code is similar to the Code Institute CSS:
+![css_validation_error](documentation_assets/images/static_css_error.png)
+
+I had no errors in my root level CSS file:
+![css_validation](documentation_assets/images/static_css_no_error.png)
+
+### JavaScript:
+I used [JS Hint](https://jshint.com/) to check for any errors within all my JavaScript script files. JS Hint showed warnings a few warnings but no errors.
+
+I had no errors in my JavaScript files:
+![javascript_validation](documentation_assets/images/javascript_validation.png)
+
+### Python:
+I used the python3 -m flake8 command within GitPod to check for any errors within my Python files. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
+
+There were also "line too long" errors within my settings.py file but I have chosen to ignore these as this is a very important file.
+
+## Manual Testing
+
+I have tested my site on Safari and google chrome on multiple devices.
+
+These include:
+-   iPhone X
+-   iPhone XS Max
+-   iPad Pro
+-   MacBook Pro
+
