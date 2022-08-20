@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to my fifth project. This project is an e-commerce store to promote a healthy lifestyle. Users will be able to purchase clothes and nutrients from this website. This project will use languages and frameworks such as Django, Python, HTML, CSS and JavaScript.
+Welcome to my fifth project. This project is an e-commerce store to promote a healthy lifestyle. Users will be able to purchase clothes and nutrients from this website. This project will use languages and frameworks such as Django, Python, HTML, CSS, and JavaScript.
 
 In this project, I will set up an authentication mechanism and provide access to the site's data for users to purchase a range of products.
 
@@ -42,9 +42,9 @@ A live website can be found [here](https://vim-vigor.herokuapp.com/).
 
 [Go to the top](#table-of-contents)
 
-As a gym goer I wanted to create a website that sells healthy items as well as training gear. Users will be able to access a blog which will promote health. This store will mainly focus on simplicity and user experience for the customers.
+As a gym goer, I wanted to create a website that sells healthy items as well as training gear. Users will be able to access a blog that will promote health. This store will mainly focus on simplicity and user experience for the customers.
 
-This project will showcase a range of products for users to purchase. The site will be clear and easily accessible. The best e-commerce stores display simply but clear navigation around the site, with an intuitive design.
+This project will showcase a range of products for users to purchase. The site will be clear and easily accessible. The best e-commerce stores display simple but clear navigation around the site, with an intuitive design.
 
 <a name="strategy"></a>
 
@@ -61,13 +61,13 @@ First Time Visitor Goals
 -   As a first-time visitor, I want to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.
 -   As a first-time visitor, I want to quickly identify deals so that I can take advantage of special savings on products I'd like to purchase.
 -   As a first-time visitor, I want to search for a product key by name or description so that I can find a specific product I'd like to purchase.
--   As a first-time visitor, I want to view individual product details so that I can identify the price, description, product rating, product image and available sizes.
+-   As a first-time visitor, I want to view individual product details so that I can identify the price, description, product rating, product image, and available sizes.
 -   As a first-time visitor, I want to easily view the total of my purchases at any time so that I can avoid spending too much.
--   As a first-time visitor, I want to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
+-   As a first-time visitor, I want to sort the list of available products so that I can easily identify the best-rated, best-priced, and categorically sorted products.
 -   As a first-time visitor, I want to sort a specific category of products so that I can find the best-priced or best-rated products in a specific category, or sort the products in that category by name.
 -   As a first-time visitor, I want to easily add items to my basket so that I can view all the products I would like to purchase before completing payment.
 -   As a first-time visitor, I want to easily remove items and update quantities from my basket so that I can remove any products I do not want before checking out.
--   As a first-time visitor, I want to easily select the size and quantity of a product when purchasing it so that I can ensure I don’t accidentally select the wrong product, quantity or size.
+-   As a first-time visitor, I want to easily select the size and quantity of a product when purchasing it so that I can ensure I don’t accidentally select the wrong product, quantity, or size.
 -   As a first-time visitor, I want to easily enter my payment information at the checkout page so that I can checkout with no issues.
 -   As a first-time visitor, I want to feel safe and secure with my personal and payment information so that I can confidently provide the details to make a purchase.
 
@@ -75,7 +75,7 @@ Returning Visitor Goals
 -   As a returning visitor, I want to create an account.
 -   As a returning visitor, I want to update my user profile.
 -   As a returning visitor, I want to view my order history.
--   As a returning visitor, I want to easily log in or logout so that I can access my personal account information.
+-   As a returning visitor, I want to easily log in or log out so that I can access my personal account information.
 -   As a returning visitor, I want to easily register for an account so that I can have a personal account and be able to view my profile.
 
 
@@ -94,13 +94,13 @@ The website should have a simple user interface, with the navigation to each sec
 ### User Stories
 Throughout the project, I used the GitHub projects board to log all user stories as my project management tool. This helped me keep the focus on the necessary tasks as I would move them to the "in progress lane" as I'm working on the story. I would then move them to the "done" lane once the story has been completed. I would add new user stories during the project to keep track of the tasks that had to be done.
 
-Start of project user story board:
+Start of project user storyboard:
 ![user_story_board_start](documentation_assets/images/userstorynew.png)
 
-In Progress user story board:
+In Progress user storyboard:
 ![user_story_board_start](documentation_assets/images/userstoryinprogress.png)
 
-End of project the user story board:
+End of the project the user storyboard:
 ![user_story_board_finish](documentation_assets/images/userstorydone.png)
 
 ### Strategy Table
@@ -123,7 +123,7 @@ Total | 47 | 45
 As I am unable to include all of the features from the strategy table. I will phase this project in multiple phases. Phase 1 will be what I have identified as a minimum viable product. Please find below the plans I have for each phase.
 
 ### Phase 1
-- Display a range of health related products
+- Display a range of health-related products
 - Allow users to register for an account
 - Allow users to create and edit a personal profile
 - Responsive design
@@ -134,9 +134,9 @@ As I am unable to include all of the features from the strategy table. I will ph
 - Allow the customer to enter payment information securely
 
 ### Phase 2
-- Add other health related products
+- Add other health-related products
 - Add the ability for superusers to send our emails to newsletter subscribers
-- Filter category by the key word
+- Filter category by the keyword
 
 <a name="structure"></a>
 
@@ -146,10 +146,10 @@ As I am unable to include all of the features from the strategy table. I will ph
 
 It is really important to include responsive design in this project as many users are using different devices (mobile, tablet, laptop/PC). This gives the user the best experience on their device.
 
-- Responsive on all device sizes
-- Easy navigation through labelled buttons
-- Footer at the bottom of the each page that links to the social media websites, newsletter subscription form and business pages.
-- All elements will be consistent including font size, font family, colour scheme.
+- Responsive for all device sizes
+- Easy navigation through labeled buttons
+- Footer at the bottom of each page that links to the social media websites, newsletter subscription form, and business pages.
+- All elements will be consistent including font size, font family, and color scheme.
 
 ### Database Model
 Blog model structure:
@@ -216,7 +216,7 @@ class Order(models.Model):
 
     def update_total(self):
         """
-        Update the grand total each time a line item is added,
+        Update the total each time a line item is added,
         accounting for delivery costs
         """
         self.order_total = self.lineitems.aggregate(
@@ -230,7 +230,7 @@ class Order(models.Model):
 
     def save(self, *args, **kwargs):
         """
-        Orverride the original save method to set the order number
+        Override the original save method to set the order number
         if it hasn't already been set
         """
         if not self.order_number:
@@ -255,7 +255,7 @@ class OrderLineItem(models.Model):
 
     def save(self, *args, **kwargs):
         """
-        Orverride the original save method to set the lineitem total
+        Override the original save method to set the line-item total
         and update the order total
         """
         self.lineitem_total = self.product.price * self.quantity
@@ -346,7 +346,7 @@ class UserProfile(models.Model):
 
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
-    """vCreate or update the user profile """
+    """create or update the user profile """
     if created:
         UserProfile.objects.create(user=instance)
     instance.userprofile.save()
@@ -407,7 +407,7 @@ From left to right Checkout > Contact > Blog Mobile:
 [Go to the top](#table-of-contents)
 
 ### Colours
-Please find the colours schemes that I used [here](https://coolors.co/007bff-000000-ffffff).
+Please find the color schemes that I used [here](https://coolors.co/007bff-000000-ffffff).
 
 ### Typography
 
@@ -424,14 +424,14 @@ The link to the font can be found [here](https://fonts.google.com/specimen/IBM+P
 
 ### All Pages
 
-- The navigation bar is placed at the top of all pages. This contains 2 sections that are separated. The first section is the product search bar, my account icon and the basket icon. The second section contains the main navigation for the products. The navigation bar is dynamic in that meaning depending on if the user is logged in or not the options will change.
+- The navigation bar is placed at the top of all pages. This contains 2 sections that are separated. The first section is the product search bar, my account icon, and the basket icon. The second section contains the main navigation for the products. The navigation bar is dynamic in that meaning depending on if the user is logged in or not the options will change.
 - If the user is not logged in the navigation bar will look like this: When signed in login will change to logout
 ![user_not_logged_in](documentation_assets/images/navbarnotsignedin.png)
 - If the user is logged in as a superuser the navigation bar will look like this:
 ![user_logged_in](documentation_assets/images/superuser.png)
 - As a superuser, the admin will have access to the product management and blog management links.
 
-- The footer is placed at the bottom of each page with social media icons, a form to subscribe to the newsletter, a link to unsubscribe to the newsletter and useful business-related links. All links in the footer open the links in a new tab.
+- The footer is placed at the bottom of each page with social media icons, a form to subscribe to the newsletter, a link to unsubscribe to the newsletter, and useful business-related links. All links in the footer open links in a new tab.
 - The home link is also placed at the top of all pages. Clicking on it will also direct the user to the home page.
 
 
@@ -447,7 +447,7 @@ The link to the font can be found [here](https://fonts.google.com/specimen/IBM+P
 - If the user enters the same password
 
 ### Login Page
-- A login form that requires the user to enter the email address and password that they used when signing up to the site.
+- A login form that requires the user to enter the email address and password that they used when signing up for the site.
 - The user can only log in once they have activated their account via an email received after signing up.
 - A message to prompt the user that if an account has not been created they can click the signup hyperlink to be redirected to the signup page.
 ![signup_email_validation](documentation_assets/signin.png)
@@ -463,9 +463,9 @@ The link to the font can be found [here](https://fonts.google.com/specimen/IBM+P
 ### Products Page
 - The user can access the product pages by selecting the category on the navigation bar.
 - The page displays a count of the search results within the category.
-- Sort by the filter at the top right of the page, so the user can filter by price, rating, name and category.
-- Each product has an image, name of product, price, category and rating.
-- The page also contains a back to top button, which the user can click to go to the top of the page.
+- Sort by the filter at the top right of the page, so the user can filter by price, rating, name, and category.
+- Each product has an image, name of the product, price, category, and rating.
+- The page also contains a back-to-top button, which the user can click to go to the top of the page.
 - As a superuser, the admin can see the edit and delete buttons, allowing quick access to the product admin.
 
 ### Products Details Page
@@ -476,15 +476,15 @@ The link to the font can be found [here](https://fonts.google.com/specimen/IBM+P
 ![basket_success](documentation_assets/images/productdetail.png)
 
 ### Basket Page
-- This page shows each product as a line item, displaying an image, name of the product, SKU, price per item and quantity. This updates the total for each item.
+- This page shows each product as a line item, displaying an image, name of the product, SKU, price per item, and quantity. This updates the total for each item.
 - When the quantity selector is at 1, the minus button is disabled.
-- A pricing summary of the whole basket is also shown with the basket total, delivery fee and total.
+- A pricing summary of the whole basket is also shown with the basket total, delivery fee, and total.
 - If the user has not met the free delivery threshold then an alert message is shown, prompting the user that they can qualify for free delivery if they spend more.
 ![delivery_threshold](documentation_assets/images/basket.png)
 
 ### Checkout Page
 - A checkout form, prompts the user to enter their delivery details with Stripe integration.
-- A checkbox for the user to confirm if they would like to save their details for next time. This only saves delivery details and not the card details.
+- A checkbox for the user to confirm if they would like to save their details for next time. This only saves delivery details and no card details.
 - A summary of the user's order is also shown, the user can then be sure they are making the correct purchase before continuing with the checkout process.
 - A message is shown just below the complete order button to warn the user that they will be charged a certain amount on their card.
 
@@ -508,13 +508,13 @@ The link to the font can be found [here](https://fonts.google.com/specimen/IBM+P
 ### Newsletter Subscribe Page
 - A one-field form for the user to enter their email to subscribe to the newsletter.
 - Once the user has successfully subscribed to the newsletter, they will be redirected to the home page. A success message will show up confirming the user has successfully subscribed to the newsletter.
-- If the user inputs email they will get a success message
+- If the user inputs an email they will get a success message
 ![subscribe_success](documentation_assets/images/newslettersuccess.png)
 
 ### Newsletter Unsubscribe Page
 - A one-field form for the user to enter their email to unsubscribe from the newsletter.
 - Once the user has successfully unsubscribed from the newsletter, they will be redirected to the home page. A success message will show up confirming the user has successfully unsubscribed to the newsletter.
-- If user unsubscribes they will get the following message.
+- If the user unsubscribes they will get the following message.
 ![unsubscribe_sucess](documentation_assets/images/newsletterunsubscribe.png)
 
 <a name="technologies-used"></a>
@@ -611,12 +611,12 @@ Special offers page | When clicking the "Special Offers" link in the navigation 
 Register page | When clicking the "register" link in the navigation bar, the browser redirects me to the register page. The user will know they are on this page by the heading. | PASS
 Login / Logout page | When clicking the "login" or "logout links in the navigation bar, the browser redirects me to the login or logout page. | PASS
 Basket page | When clicking the "basket" icon in the navigation bar, the browser redirects me to the basket page. The user will know they are on this page by the heading. | PASS
-My Profile page | When clicking the "My profile" link in the navigation bar, the browser redirects me to my profile page. The user will know they are on this page by the heading. | PASS
+My Profile page | When clicking the "My Profile" link in the navigation bar, the browser redirects me to my profile page. The user will know they are on this page by the heading. | PASS
 Product management page | When clicking the "product management" link as a superuser in the navigation bar, the browser redirects me to the product management page. The user will know they are on this page by the heading. | PASS
 Blog management page | When clicking the "blog management" link as a superuser in the navigation bar, the browser redirects me to the blog management page. The user will know they are on this page by the heading. | PASS
 Search bar | When searching for a keyword, the results will show products that contain the keyword in the product name or description. | PASS
-Foreground & background colour | Checked foreground information is not distracted by background elements. | PASS
-Text | Checked that all fonts and colours used are consistent. | PASS
+Foreground & background color | Checked foreground information is not distracted by background elements. | PASS
+Text | Checked that all fonts and colors used are consistent. | PASS
 
 ### Footer
 
@@ -636,14 +636,14 @@ Instagram | When clicking the Instagram icon, a new tab opens and redirects to t
 ### Home page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images, and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
 
 ### Products page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images, and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
 Sort filter | Check the sort/filter functionality by selecting each option. Each option reloads the page and sorts the products in the corresponding order. | PASS
 Edit Button (SuperUser only) | Check the edit button is only accessible if the user is logged in as a SuperUser. | PASS
 Delete Button (SuperUser only) | Check the delete button is only accessible if the user is logged in as a SuperUser. | PASS
@@ -651,51 +651,51 @@ Delete Button (SuperUser only) | Check the delete button is only accessible if t
 ### Products details page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images, and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
 Weight selector | Check the weight selector functionality by selecting each option. Add each option to the basket to confirm the correct weight is selected. | PASS
-Quantity Selector | Check the quantity selector functionality by selecting minus and plus buttons where applicable. Adding a product to the basket to confirm the correct quantity selected is correct. | PASS
+Quantity Selector | Check the quantity selector functionality by selecting the minus plus buttons where applicable. Adding a product to the basket to confirm the correct quantity selected is correct. | PASS
 Edit Button (SuperUser only) | Check the edit button is only accessible if the user is logged in as a SuperUser. | PASS
 Delete Button (SuperUser only) | Check the delete button is only accessible if the user is logged in as a SuperUser. | PASS
 
 ### Shopping bag page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images, and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
 Remove item from bag | Clicking the remove link on an item removes the item from the bag. | PASS
-Quantity Selector | Check the quantity selector functionality by selecting min and plus buttons where applicable. Adding a product to the basket to confirm the correct quantity selected is correct. | PASS
-Free delivery threshold | Adding products to the bag where the grand total value is under £250, the bag shows the free delivery warning message. The message disappears when the grand total is over £250. | PASS
+Quantity Selector | Check the quantity selector functionality by selecting the min plus buttons where applicable. Adding a product to the basket to confirm the correct quantity selected is correct. | PASS
+Free delivery threshold | Adding products to the bag where the total value is under £50, the bag shows the free delivery warning message. The message disappears when the total is over £50. | PASS
 
 ### Checkout page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, have no pixelation or stretched images and are responsive on all devices. | PASS
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images, and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
 Checkout form | Filling in the form with the correct validation processes the order. | PASS
-Checkout form | Filling in the form with the incorrect validation shows errors messages. | PASS
-Save details checkout | Selecting the "Save this delivery information to my profile" checkbox, this saves/updates my profile details. | PASS
-Card authentication | Used the Stripe test card details and purposely failed authenticated to check for error messages. | PASS
+Checkout form | Filling in the form with the incorrect validation shows error messages. | PASS
+Save details checkout | Selecting the "Save this delivery information to my profile" checkbox, saves/updates my profile details. | PASS
+Card authentication | Used the Stripe test card details and purposely failed to authenticate to check for error messages. | PASS
 
 ### Checkout success page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
 Order history | When clicking on an order number in the order history section, this takes me to a past order confirmation summary page. | PASS
 Updating my profile | When updating the default delivery information, this reflects on the checkout page. | PASS
 
 ### Product management page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
 Adding a product | When filling out the form to add a new product, the product is added to the relevant category and is searchable via the search bar. | PASS
 Uploading an image | When uploading an image to a new product, the site shows the name of the file that will be uploaded. When checking the product details page, the image also shows. | PASS
 
 ### Blog management page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
-Adding a Blog post | When filling out the form to add a blog post, the blog post is added to the blog main blog section. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet, and desktop views.| PASS
+Adding a Blog post | When filling out the form to add a blog post, the blog post is added to the blog's main blog section. | PASS
 Uploading an image | When uploading an image to a blog post, the site shows the name of the file that will be uploaded. When checking the all blog posts page, the image also shows. | PASS
 
 <a name="deployment"></a>
@@ -709,7 +709,7 @@ I used the terminal to deploy my project locally. To do this I had to:
 2. Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
 3. Open the terminal within GitPod
 4. Enter "python3 manage.py runserver into the terminal.
-5. Go to localhost address on my web browser.
+5. Go to the localhost address on my web browser.
 6. All locally saved changes will show up here.
 
 For the final deployment to Heroku, I had to:
@@ -720,7 +720,7 @@ For the final deployment to Heroku, I had to:
 4. In settings.py import dj_database_url
 5. Back up the local database using "./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json" in the terminal window.
 6. Comment out the local default database
-7. Add the Heroku database url via dj_database_url.parse()
+7. Add the Heroku database URL via dj_database_url.parse()
 8. Run migrations to the Postgres database
 9. Restore the database using this command "./manage.py loaddata db.json" in the terminal windows.
 10. Create a SuperUser for the Postgres database
@@ -754,29 +754,29 @@ For the final deployment to Heroku, I had to:
 # 6. SEO
 [Go to the top](#table-of-contents)
 
-To improve the search engine optimisation (SEO) of the site I:
+To improve the search engine optimization (SEO) of the site I:
 
-- Added keywords in a meta tag to my base.html. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
+- Added keywords in a meta tag to my base.html. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are several short-tail and long-tail keywords.
 
 <a name="marketing"></a>
 
 # 7. Marketing
 [Go to the top](#table-of-contents)
 
-For my marketing strategies, I decided to go with content marketing, Social media and email marketing root. As these are free options and very effective for an E-commerce store.
+For my marketing strategies, I decided to go with content marketing, Social media, and email marketing root. As these are free options and very effective for an E-commerce store.
 
 - Content marketing - Posting content that contains blog posts and video tutorials will be my primary source to display content.
 
-- Social media - Using these platforms will help build and interact with customers to build relationships and loyalty. This also helps build the brand. Followers will help share the business posts and in result gain more traction with other people. The same content can be across all social media platforms.
+- Social media - Using these platforms will help build and interact with customers to build relationships and loyalty. This also helps build the brand. Followers will help share the business posts and as result gain more traction with other people. The same content can be across all social media platforms.
 
-- Email marketing - Using email marking via a newsletter will be beneficial as it is a free source of marketing. Those who are subscribed are more likely to convert into paying customers. This will increase sales and returning customers as I can provide discount codes and other special offers. A good pro is that the business has total control over the design of the emails.
+- Email marketing - Using email marking via a newsletter will be beneficial as it is a free source of marketing. Those who are subscribed are more likely to convert into paying customers. This will increase sales and return customers as I can provide discount codes and other special offers. A good pro is that the business has total control over the design of emails.
 
 <a name="social-media"></a>
 
 # 8. Social Media Business Page
 [Go to the top](#table-of-contents)
 
-![facebook_business_page](documentation_assets/images/facebook_business_page.png)
+![facebook_business_page](documentation_assets/images/facebook.png)
 
 The business will use social media as a platform to promote the business.
 
@@ -822,5 +822,3 @@ The business will use social media as a platform to promote the business.
 - Code Institue Tutor Support - For directing me to the correct solutions for any bugs.
 
 - My Mentor - For his constructive criticism and always pushing me to go further to develop my skills.
-
-
